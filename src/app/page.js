@@ -1,7 +1,10 @@
-"use client"
+import styles from './page.module.css'
+import ZoomParallax from '../components/ZoomParallax/index';
 
 export default function Home() {
   return (
-    <div>Hello</div>
+    <main className={styles.main}>
+      <ZoomParallax />
+    </main>
   );
 }
