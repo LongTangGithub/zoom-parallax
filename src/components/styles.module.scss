@@ -1,34 +1,82 @@
-.container {
+.container{
     height: 300vh;
     position: relative;
-
-    .sticky {
+    .sticky{
         position: sticky;
-        top: 0px;
-        height: 100vh;
-        background-color: orange;
-    }
-
-    .el{
-        width: 100%;
-        height:100%;
-        position: absolute;
+        overflow: hidden;
         top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        height: 100vh;
+        overflow: hidden;
 
-        .imageContainer{
-            width: 25vw;
-            height: 25vh;
-            position: relative;
-        }
-            img {
-                object-fit: cover;
+        .el{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .imageContainer{
+                position: relative;
+                width: 25vw;
+                height: 25vh;
+                img{
+                    object-fit: cover;
+                }
             }
-
+            // lizard
+            &:nth-of-type(2){
+                .imageContainer{
+                    top: -32vh;
+                    left: 2vw;
+                    width: 15vw;
+                    height: 35vh;
+                }
+            }
+            // dog
+            &:nth-of-type(3){
+                .imageContainer{
+                    top: -10vh;
+                    left: -25vw;
+                    width: 20vw;
+                    height: 45vh;
+                }
+            }
+            // horse
+            &:nth-of-type(4){
+                .imageContainer{
+                    top: -4vh;
+                    left: 27.5vw;
+                    width: 20vw;
+                    height: 30vh;
+                }
+            }
+            // man
+            &:nth-of-type(5){
+                .imageContainer{
+                    top: 27.5vh;
+                    left: 10vw;
+                    width: 20vw;
+                    height: 25vh;
+                }
+            }
+            // cat
+            &:nth-of-type(6){
+                .imageContainer{
+                    top: 40.5vh;
+                    left: -18.5vw;
+                    width: 30vw;
+                    height: 50vh;
+                }
+            }
+            &:nth-of-type(7){
+                .imageContainer{
+                    top: 22.5vh;
+                    left: 25vw;
+                    width: 15vw;
+                    height: 15vh;
+                }
+            }
+        }
+    }
 }
-
-
-
